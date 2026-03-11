@@ -1,0 +1,15 @@
+﻿
+> frontend@0.1.0 lint
+> eslint
+
+
+C:\Users\nehru\OneDrive\Desktop\Rising Roof Group\frontend\src\app\(admin)\blogs\page.tsx
+  13:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  41:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\nehru\OneDrive\Desktop\Rising Roof Group\frontend\src\app\(admin)\properties\page.tsx
+  13:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  44:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 4 problems (4 errors, 0 warnings)
+
