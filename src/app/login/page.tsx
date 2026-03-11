@@ -162,7 +162,7 @@ export default function LoginPage() {
 
           <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.08)', textAlign: 'center' }}>
             <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '12px' }}>
-              Default credentials: admin@risingroof.com / admin123
+              Login: admin@risingroof.com &nbsp;/&nbsp; Admin@123
             </p>
           </div>
         </div>

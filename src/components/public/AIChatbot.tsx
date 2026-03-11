@@ -69,7 +69,7 @@ export default function AIChatbot() {
   const [messages, setMessages] = React.useState<Message[]>([
     {
       role: 'bot',
-      text: "Hello! 👋 I'm Aria, your RisingRoof AI Property Assistant.\n\nI can help you:\n• Find properties in Hyderabad\n• Answer NRI investment queries\n• Calculate EMIs & registration costs\n• Book free consultations\n\nHow can I help you today?",
+      text: "Namaste! 🙏 I'm Priya, your RisingRoof AI Property Assistant.\n\nI can help you:\n• Find properties in Hyderabad\n• Answer NRI investment queries\n• Calculate EMIs & registration costs\n• Book free consultations\n\nHow can I help you today?",
       time: new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' }),
     }
   ]);
@@ -133,7 +133,7 @@ export default function AIChatbot() {
       <button
         id="rr-ai-toggle"
         onClick={() => { setOpen(o => !o); setTimeout(() => inputRef.current?.focus(), 300); }}
-        title="Chat with Aria — RisingRoof AI"
+        title="Chat with Priya — RisingRoof AI"
         style={{
           position: 'fixed',
           bottom: '28px',
@@ -226,7 +226,7 @@ export default function AIChatbot() {
               fontSize: '20px', flexShrink: 0,
             }}>🤖</div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ color: '#fff', fontWeight: 700, fontSize: '14px', lineHeight: 1.3 }}>Aria — RisingRoof AI</div>
+              <div style={{ color: '#fff', fontWeight: 700, fontSize: '14px', lineHeight: 1.3 }}>Priya — RisingRoof AI</div>
               <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '11px', display: 'flex', alignItems: 'center', gap: '5px', marginTop: '2px' }}>
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#4ade80', display: 'inline-block', flexShrink: 0 }} />
                 Online · Hyderabad Property Expert

@@ -279,7 +279,7 @@ export default function PropertiesPage() {
           </Field>
           <div style={{ paddingTop: '16px', borderTop: '1px solid #F0E8FA', display: 'flex', gap: '10px', justifyContent: 'flex-end', marginTop: '4px' }}>
             <button type="button" onClick={() => setDrawerOpen(false)} style={{ padding: '11px 20px', background: '#F2EAF7', border: 'none', borderRadius: '9px', color: '#5A2D82', fontWeight: 600, fontSize: '14px', cursor: 'pointer', fontFamily: 'inherit' }}>Cancel</button>
-            <button type="submit" disabled={saving} style={{ padding: '11px 24px', background: 'linear-gradient(135deg, #3B1F5E, #5A2D82)', border: 'none', borderRadius: '9px', color: '#fff', fontWeight: 700, fontSize: '14px', cursor: savings ? 'wait' : 'pointer', fontFamily: 'inherit', display: 'flex', alignItems: 'center', gap: '7px' }}>
+            <button type="submit" disabled={saving} style={{ padding: '11px 24px', background: 'linear-gradient(135deg, #3B1F5E, #5A2D82)', border: 'none', borderRadius: '9px', color: '#fff', fontWeight: 700, fontSize: '14px', cursor: saving ? 'wait' : 'pointer', fontFamily: 'inherit', display: 'flex', alignItems: 'center', gap: '7px' }}>
               {saving ? '⏳ Saving...' : (editId ? '✅ Update Property' : '+ Save Property')}
             </button>
           </div>
