@@ -4,6 +4,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import './risingroof.css';
 import AIChatbot from '@/components/public/AIChatbot';
+import JsonLd from '@/components/seo/JsonLd';
 
 export default function HomePage() {
   const [activeSlide, setActiveSlide] = React.useState(0);
@@ -77,6 +78,7 @@ export default function HomePage() {
 
   return (
     <div className="rr-body">
+      <JsonLd />
 
       {/* NAVBAR */}
       <nav className="rr-nav">
