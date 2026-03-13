@@ -18,14 +18,13 @@ export const metadata: Metadata = {
     'Rising Roof Group — Hyderabad\'s most trusted real estate channel partner. Premium properties in Gachibowli, HITEC City, Kondapur, Banjara Hills & more. Zero brokerage. RERA verified. Expert NRI investment guidance. 1,200+ happy families. Book a free consultation today.',
 
   keywords: [
-    // Primary high-intent keywords
     'properties in Hyderabad',
     'flats for sale in Hyderabad',
     'real estate Hyderabad',
     'buy property Hyderabad',
     'new apartments Hyderabad',
     'residential projects Hyderabad',
-    // Locality-specific
+
     'properties in Gachibowli',
     'flats in HITEC City',
     'apartments in Kondapur',
@@ -36,7 +35,7 @@ export const metadata: Metadata = {
     'houses in Narsingi',
     'flats in Tellapur',
     'properties in Shamirpet',
-    // Intent-based
+
     'channel partner Hyderabad',
     'real estate agent Hyderabad',
     'property consultant Hyderabad',
@@ -46,20 +45,20 @@ export const metadata: Metadata = {
     '3 BHK flats Hyderabad',
     '2 BHK apartments Hyderabad',
     'villas for sale Hyderabad',
-    // NRI
+
     'NRI property investment Hyderabad',
     'NRI real estate India',
     'buy property in India from USA',
     'NRI home loan Hyderabad',
-    // Builder
+
     'Prestige properties Hyderabad',
     'Godrej properties Hyderabad',
     'Brigade properties Hyderabad',
-    // Zero-brokerage / trust
+
     'zero brokerage property Hyderabad',
     'property without brokerage Hyderabad',
     'verified properties Hyderabad',
-    // Long-tail
+
     'affordable flats in Hyderabad under 1 crore',
     'premium villas in Hyderabad above 2 crore',
     'best locality to buy property in Hyderabad 2025',
@@ -70,7 +69,6 @@ export const metadata: Metadata = {
   creator: 'Rising Roof Group',
   publisher: 'Rising Roof Group',
 
-  /* Open Graph — Facebook, LinkedIn, WhatsApp previews */
   openGraph: {
     type: 'website',
     locale: 'en_IN',
@@ -90,7 +88,6 @@ export const metadata: Metadata = {
     ],
   },
 
-  /* Twitter / X Card */
   twitter: {
     card: 'summary_large_image',
     site: '@risingroofgroup',
@@ -101,7 +98,6 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg'],
   },
 
-  /* Robots */
   robots: {
     index: true,
     follow: true,
@@ -116,7 +112,6 @@ export const metadata: Metadata = {
     },
   },
 
-  /* Canonical */
   alternates: {
     canonical: 'https://www.risingroof.in',
     languages: {
@@ -124,23 +119,19 @@ export const metadata: Metadata = {
     },
   },
 
-  /* Verification — paste codes from Google/Bing Search Console */
+  /* Google Search Console Verification */
   verification: {
-    // google: 'paste-your-google-search-console-code-here',
-    // other: [{ name: 'msvalidate.01', value: 'paste-bing-code-here' }],
+    google: 'googleb3ed054c280bede6',
   },
 
-  /* App icons */
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
 
-  /* Web manifest */
   manifest: '/site.webmanifest',
 
-  /* Category */
   category: 'Real Estate',
 };
 
@@ -155,29 +146,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" dir="ltr">
       <head>
-        {/* Preconnect for performance → faster LCP → better SEO */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
-        {/* DNS prefetch for external assets */}
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://wa.me" />
 
-        {/* Geo tags for local SEO */}
         <meta name="geo.region" content="IN-TG" />
         <meta name="geo.placename" content="Hyderabad, Telangana, India" />
         <meta name="geo.position" content="17.385044;78.486671" />
         <meta name="ICBM" content="17.385044, 78.486671" />
 
-        {/* Language */}
         <meta httpEquiv="content-language" content="en-IN" />
 
-        {/* Mobile */}
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Rising Roof" />
       </head>
+
       <body className={cn('antialiased')}>
         <NextAuthProvider>{children}</NextAuthProvider>
       </body>
