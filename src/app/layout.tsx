@@ -121,7 +121,7 @@ export const metadata: Metadata = {
 
   /* Google Search Console Verification */
   verification: {
-    google: 'googleb3ed054c280bede6',
+    google: 'googleb3ed054c280bede6.html',
   },
 
   icons: {
