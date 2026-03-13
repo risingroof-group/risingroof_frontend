@@ -247,8 +247,6 @@ function LocalBusinessSchema() {
   );
 }
 
-/* ─── Actual page import ─── */
-export { default } from './_page_content';
 export { LocalBusinessSchema as generateStructuredData };
 
 // Re-export as named export for the page to use
