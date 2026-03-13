@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
    GLOBAL META TEMPLATE — specific pages override title/desc
 ─────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  metadataBase: new URL('https://risingroofgroup.com'),
+  metadataBase: new URL('https://www.risingroof.in'),
 
   title: {
     default: 'Rising Roof Group | #1 Real Estate Channel Partner in Hyderabad',
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     'Rising Roof Group',
   ],
 
-  authors: [{ name: 'Rising Roof Group', url: 'https://risingroofgroup.com' }],
+  authors: [{ name: 'Rising Roof Group', url: 'https://www.risingroof.in' }],
   creator: 'Rising Roof Group',
   publisher: 'Rising Roof Group',
 
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://risingroofgroup.com',
+    url: 'https://www.risingroof.in',
     siteName: 'Rising Roof Group',
     title: 'Rising Roof Group | #1 Real Estate Channel Partner in Hyderabad',
     description:
@@ -118,16 +118,16 @@ export const metadata: Metadata = {
 
   /* Canonical */
   alternates: {
-    canonical: 'https://risingroofgroup.com',
+    canonical: 'https://www.risingroof.in',
     languages: {
-      'en-IN': 'https://risingroofgroup.com',
+      'en-IN': 'https://www.risingroof.in',
     },
   },
 
-  /* Verification — add your actual codes once site is live */
+  /* Verification — paste codes from Google/Bing Search Console */
   verification: {
-    google: 'REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_CODE',
-    // bing: 'REPLACE_WITH_BING_CODE',
+    // google: 'paste-your-google-search-console-code-here',
+    // other: [{ name: 'msvalidate.01', value: 'paste-bing-code-here' }],
   },
 
   /* App icons */

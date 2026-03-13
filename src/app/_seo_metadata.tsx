@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 
+const SITE = 'https://www.risingroof.in';
+
 /* ─── Page-level SEO override for the public homepage ─── */
 export const metadata: Metadata = {
   title: 'Rising Roof Group | Buy Property in Hyderabad | Channel Partner',
   description:
-    'Rising Roof Group is Hyderabad\'s trusted real estate channel partner. Buy verified flats, villas & plots in Gachibowli, HITEC City, Kondapur, Banjara Hills. Zero brokerage · NRI services · Free consultation. 📞 +91 84593 21228',
+    "Rising Roof Group is Hyderabad's trusted real estate channel partner. Buy verified flats, villas & plots in Gachibowli, HITEC City, Kondapur, Banjara Hills. Zero brokerage · NRI services · Free consultation. 📞 +91 84593 21228",
 
   keywords: [
     'buy property Hyderabad 2025',
@@ -20,11 +22,11 @@ export const metadata: Metadata = {
     'Rising Roof Group',
   ],
 
-  alternates: { canonical: 'https://risingroofgroup.com' },
+  alternates: { canonical: SITE },
 
   openGraph: {
     type: 'website',
-    url: 'https://risingroofgroup.com',
+    url: SITE,
     title: 'Rising Roof Group | Buy Property in Hyderabad | Zero Brokerage',
     description:
       'Search 500+ verified properties across Hyderabad. Luxury villas, 2/3 BHK flats with RERA approval. Zero brokerage. Book a free consultation today!',
@@ -40,12 +42,12 @@ function LocalBusinessSchema() {
       /* 1. Organization */
       {
         '@type': 'Organization',
-        '@id': 'https://risingroofgroup.com/#organization',
+        '@id': `${SITE}/#organization`,
         name: 'Rising Roof Group',
-        url: 'https://risingroofgroup.com',
+        url: SITE,
         logo: {
           '@type': 'ImageObject',
-          url: 'https://risingroofgroup.com/logo.png',
+          url: `${SITE}/logo.png`,
           width: 240,
           height: 60,
         },
@@ -98,10 +100,10 @@ function LocalBusinessSchema() {
       /* 2. Local Business (Real Estate Agent) */
       {
         '@type': ['LocalBusiness', 'RealEstateAgent'],
-        '@id': 'https://risingroofgroup.com/#localbusiness',
+        '@id': `${SITE}/#localbusiness`,
         name: 'Rising Roof Group',
-        image: 'https://risingroofgroup.com/og-image.jpg',
-        url: 'https://risingroofgroup.com',
+        image: `${SITE}/og-image.jpg`,
+        url: SITE,
         telephone: '+91-84593-21228',
         priceRange: '₹₹₹',
         currenciesAccepted: 'INR',
@@ -135,25 +137,24 @@ function LocalBusinessSchema() {
           worstRating: '1',
         },
         description:
-          'Hyderabad\'s #1 real estate channel partner. RERA-verified properties in Gachibowli, HITEC City, Kondapur, Banjara Hills. Zero brokerage. NRI desk available.',
+          "Hyderabad's #1 real estate channel partner. RERA-verified properties in Gachibowli, HITEC City, Kondapur, Banjara Hills. Zero brokerage. NRI desk available.",
         hasMap: 'https://maps.google.com/?q=17.4399,78.3489',
-        servesCuisine: null,
-        branchOf: { '@id': 'https://risingroofgroup.com/#organization' },
+        branchOf: { '@id': `${SITE}/#organization` },
       },
 
       /* 3. Website + Search action (Google Sitelinks Searchbox) */
       {
         '@type': 'WebSite',
-        '@id': 'https://risingroofgroup.com/#website',
-        url: 'https://risingroofgroup.com',
+        '@id': `${SITE}/#website`,
+        url: SITE,
         name: 'Rising Roof Group',
         description: 'Find property in Hyderabad — Rising Roof Group',
-        publisher: { '@id': 'https://risingroofgroup.com/#organization' },
+        publisher: { '@id': `${SITE}/#organization` },
         potentialAction: {
           '@type': 'SearchAction',
           target: {
             '@type': 'EntryPoint',
-            urlTemplate: 'https://risingroofgroup.com/public-properties?q={search_term_string}',
+            urlTemplate: `${SITE}/public-properties?q={search_term_string}`,
           },
           'query-input': 'required name=search_term_string',
         },
@@ -162,11 +163,11 @@ function LocalBusinessSchema() {
       /* 4. Breadcrumb for homepage */
       {
         '@type': 'BreadcrumbList',
-        '@id': 'https://risingroofgroup.com/#breadcrumb',
+        '@id': `${SITE}/#breadcrumb`,
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://risingroofgroup.com' },
-          { '@type': 'ListItem', position: 2, name: 'Properties', item: 'https://risingroofgroup.com/public-properties' },
-          { '@type': 'ListItem', position: 3, name: 'Blog', item: 'https://risingroofgroup.com/public-blogs' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+          { '@type': 'ListItem', position: 2, name: 'Properties', item: `${SITE}/public-properties` },
+          { '@type': 'ListItem', position: 3, name: 'Blog', item: `${SITE}/public-blogs` },
         ],
       },
 
@@ -230,11 +231,11 @@ function LocalBusinessSchema() {
         '@type': 'Service',
         name: 'NRI Property Investment Services',
         serviceType: 'Real Estate Investment Advisory',
-        provider: { '@id': 'https://risingroofgroup.com/#organization' },
+        provider: { '@id': `${SITE}/#organization` },
         areaServed: ['IN', 'US', 'GB', 'AE', 'AU', 'SG'],
         description:
           'Complete NRI real estate investment services including virtual property tours, FEMA compliance, NRI home loans, and property management in Hyderabad.',
-        url: 'https://risingroofgroup.com/#nri',
+        url: `${SITE}/#nri`,
       },
     ],
   };

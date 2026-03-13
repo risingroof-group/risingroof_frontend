@@ -3,34 +3,41 @@ import { MetadataRoute } from 'next';
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      /* Allow all bots to crawl all public pages */
+      /* ── Default: allow all search bots on public pages ── */
       {
         userAgent: '*',
         allow: '/',
         disallow: [
+          '/admin',
           '/admin/',
-          '/admin/dashboard',
-          '/admin/properties',
-          '/admin/blogs',
           '/login',
           '/api/',
           '/_next/',
+          '/static/',
         ],
       },
-      /* Googlebot — full access */
+      /* ── Googlebot: explicit full access ── */
       {
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: ['/admin/', '/login', '/api/'],
+        disallow: ['/admin', '/login', '/api/'],
       },
-      /* Bingbot — full access */
+      /* ── Bingbot: explicit full access ── */
       {
         userAgent: 'Bingbot',
         allow: '/',
-        disallow: ['/admin/', '/login', '/api/'],
+        disallow: ['/admin', '/login', '/api/'],
+      },
+      /* ── Block AI scrapers that don't contribute to rankings ── */
+      {
+        userAgent: ['GPTBot', 'ChatGPT-User', 'Google-Extended', 'CCBot'],
+        disallow: '/',
       },
     ],
-    sitemap: 'https://risingroofgroup.com/sitemap.xml',
-    host: 'https://risingroofgroup.com',
+    sitemap: [
+      'https://www.risingroof.in/sitemap.xml',
+      'https://risingroof.in/sitemap.xml',
+    ],
+    host: 'https://www.risingroof.in',
   };
 }
