@@ -15,7 +15,8 @@ export const authOptions: NextAuthOptions = {
 
         try {
           // Calling the NestJS API
-          const res = await axios.post('http://localhost:4000/auth/login', {
+          const backendUrl = process.env.BACKEND_URL ?? process.env.NEXT_PUBLIC_API_URL;
+          const res = await axios.post(`${backendUrl}/auth/login`, {
             email: credentials.email,
             password: credentials.password,
           });
