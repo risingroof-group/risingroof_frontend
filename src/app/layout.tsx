@@ -119,9 +119,9 @@ export const metadata: Metadata = {
     },
   },
 
-  /* Google Search Console Verification */
+  /* Verification — Google Search Console */
   verification: {
-    google: 'googleb3ed054c280bede6.html',
+    google: 'b3ed054c280bede6',
   },
 
   icons: {
